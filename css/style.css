@@ -3,3 +3,31 @@
     margin: 0;
     padding: 0;
 }
+
+
+
+
+.my-sidebar{
+    width: 145px;
+    height: calc(100vh - 54px);
+    background-image: url(../img/sidebar-bg.png);
+}
+
+
+
+
+.my-navbar{
+    height: 100px;
+}
+
+.my-size{
+    font-size: smaller;
+}
+
+
+
+.my-form{
+    position: absolute;
+    inset: 0px auto auto 50%;
+    margin: 0px;
+}
