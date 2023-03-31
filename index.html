@@ -15,9 +15,10 @@
 
 
 <!-- Inizio navbar bianca -->
-    <nav class="navbar navbar-expand-lg bg-light w-100 position-fixed">
+    <nav class="navbar navbar-expand bg-light w-100 position-fixed">
         <div class="container-fluid bg-white">
-          <img src="img/logo.svg" class=" pe-4 " alt="">
+          <img src="img/logo.svg" class=" pe-4 img-desktop" alt="">
+          <img src="img/mobile-logo.png" class="pe-4 img-respo" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,7 +26,10 @@
             <form class="d-flex w-100" role="search">
               <input class="form-control me-5 " type="search" placeholder="Prova a cercare: Lezioni di Laveral" aria-label="Search">
             </form>
+
              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
               <li class="nav-item">
                 <a class="nav-link active fa-solid fa-list" aria-current="page" href=""></a>
               </li>
@@ -35,6 +39,8 @@
               <li class="nav-item">
                 <a class="nav-link fa-solid fa-ellipsis-vertical" href=""></a>
               <li>
+
+                
               <a class="nav-link fa-sharp fa-solid fa-bell text-warning" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               </a>
                 <ul class="dropdown-menu">
@@ -43,9 +49,11 @@
                   <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
               </li>
+            </ul>
           </div>
         </div>
       </nav>
+    
 
 
   <main class="d-flex pt-5">
@@ -57,20 +65,20 @@
           <li>
             <a href="#" class="nav-link text-white">
               <i class="fa-sharp fa-solid fa-house bg-text-white me-1" ></i>
-              Home
+              <div class="my-display">Home</div>
             </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white me-1">
                 <i class="fa-solid fa-chart-column"></i>
               
-              Stats
+                <div class="my-display">Stats</div>
             </a>
           </li>
            <li>
             <a href="#" class="nav-link text-white me-1">
                 <i class="fa-solid fa-signal"></i>
-              Signals
+                <div class="my-display">Signals</div>
             </a>
           </li>
         </ul>
@@ -80,7 +88,7 @@
             <li>
                 <a href="#" class="nav-link text-white me-1">
                     <i class="fa-solid fa-gear "></i>
-                    Admin
+                    <div class="my-display">Admin</div>
                   </a>
             </li>
         </ul>
@@ -99,20 +107,20 @@
 
 
               <!-- Colonna1 -->
-              <div class="col-6 ">
+              <div class="col-12 col-md-6 ">
                 <h2 class="d-inline-block">Boolean</h2>
                 <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size" href=""> Piano blaze</a></small><br>
                 <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size" href="">3 app</a></small>
-                <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size" href="">Boolean mobile app</a></small>
-                <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size" href="">Boolean web app</a></small>
-                <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size" href="">Boolean blog app</a></small>
+                <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size my-display-2" href="">Boolean mobile app</a></small>
+                <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size my-display-2" href="">Boolean web app</a></small>
+                <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size my-display-2" href="">Boolean blog app</a></small>
                 
 
 
 
               <!-- Colonna 2 -->
               </div>
-              <div class="col-3 ">
+              <div class="col-12 col-md-3 ">
                 Studenti online negli ultimi 30 minuti <br> <h3>125</h3>
               </div>
 
@@ -127,7 +135,7 @@
               <!-- Colonnaa 3  Button con FORM -->
 
 
-              <div class="col-3 text-center">
+              <div class="col-12 col-md-3">
                 Nuovo studente
                
                 
@@ -225,7 +233,7 @@
         <div class="row">
 
          <!-- Inizio colonna 1 -->
-          <div class="col-8">
+          <div class="col-lg-8 col-md-12  ">
 
             <!-- Card "prossime classi" -->
             <div class="card w-100 mt-3">
@@ -234,7 +242,7 @@
                 <h3>Prossime classi</h3>
               </div>
             <div class="row">
-              <div class="col-5 pe-0">
+              <div class="col-6 col-md-5 pe-0">
                 <ul class="list-group list-group-flush ">
                   <li class="list-group-item ">Nome</li>
                   <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 75</small></li>
@@ -247,7 +255,7 @@
                   <li class="list-group-item "><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 82</small></li></li>
                 </ul>
               </div>
-              <div class="col-2 list-group list-group-flush p-0 text-center">
+              <div class="col-2 list-group list-group-flush p-0 text-center my-display-3">
                 <li class="list-group-item "><small>Data inizio</small></li>
                 <li class="list-group-item "><small>15 feb 2021</small></li>
                 <li class="list-group-item "><small>16 feb 2021</small></li>
@@ -258,7 +266,7 @@
                 <li class="list-group-item "><small>21 feb 2021</small></li>
                 <li class="list-group-item "><small>22 feb 2021</small></li>
               </div>
-              <div class="col-1 list-group list-group-flush p-0 text-center">
+              <div class="col-1 list-group list-group-flush p-0 text-center my-display-3">
                 <li class="list-group-item "><small>ROI</small></li>
                 <li class="list-group-item "><small>20%</small></li>
                 <li class="list-group-item "><small>20%</small></li>
@@ -269,7 +277,7 @@
                 <li class="list-group-item "><small>20%</small></li>
                 <li class="list-group-item "><small>20%</small></li>
               </div>
-              <div class="col-2 list-group list-group-flush p-0 text-center">
+              <div class="col-md-2 col-3 list-group list-group-flush p-0 text-center">
                 <li class="list-group-item "><small>Stato</small></li>
                 <li class="list-group-item "><small>Done</small></li>
                 <li class="list-group-item "><small>Done</small></li>
@@ -280,7 +288,7 @@
                 <li class="list-group-item "><small>failed</small></li>
                 <li class="list-group-item "><small>Done</small></li>
               </div>
-              <div class="col-2 list-group list-group-flush ps-0 text-center">
+              <div class="col-md-2 col-3 list-group list-group-flush ps-0 text-center">
                 <li class="list-group-item  "><small>Azioni</small></li>
                 <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
                 <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
@@ -351,7 +359,7 @@
 
 
          <!-- Inizio colonna 2 -->
-          <div class="col-4">
+          <div class="col-lg-4 col-md-12">
 
             <!-- Card "Todo" -->
             <div class="card w-100 mt-3">

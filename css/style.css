@@ -11,6 +11,17 @@
     position: fixed;
 }
 
+
+.my-display{
+    display: inline-block;
+}
+
+
+.img-respo{
+    display: none;
+    height: 45px;
+}
+
 .my-navbar{
     height: 100px;
     position: fixed;
@@ -51,4 +62,108 @@
     height: 20px;
     padding-top: 8px;
     border-radius: 2px;
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .container{
+        max-width: 840px;
+    }
+
+
+    .img-respo{
+        display: block;
+    }
+
+    .img-desktop{
+        display: none;
+    }
+
+    nav .nav-item{
+        display: none;
+    }
+
+    .my-display, .my-display-2{
+        display: none;
+    }
+
+
+    .my-sidebar{
+        width: 85px;
+    }
+
+
+    .my-navbar{
+        width: calc(100% - 85px);
+    }
+
+    .my-margin-navbar{
+        margin-left: 85px;
+    }
+
+}
+
+
+
+
+@media  screen and (min-width: 480px) and (max-width:767px) {
+
+    .img-respo{
+        display: block;
+    }
+
+    .img-desktop{
+        display: none;
+    }
+
+    nav .nav-item{
+        display: none;
+    }
+
+    .my-display, .my-display-2, .my-display-3{
+        display: none;
+    }
+
+
+    .my-sidebar{
+        width: 85px;
+    }
+
+
+    .my-navbar{
+        width: calc(100% - 85px);
+        height: 300px;
+    }
+
+    .my-margin-navbar{
+        margin-left: 85px;
+    }
+
+
+    .my-container{
+        margin-top: 300px;
+    }
+
+
+
+    .my-container{
+        height: 45vh;
+    }
+
+
+
+
+
+
+
 }
