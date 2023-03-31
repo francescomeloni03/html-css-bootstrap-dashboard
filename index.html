@@ -14,8 +14,8 @@
 
 
 
-
-    <nav class="navbar navbar-expand-lg bg-light">
+<!-- Inizio navbar bianca -->
+    <nav class="navbar navbar-expand-lg bg-light w-100 position-fixed">
         <div class="container-fluid bg-white">
           <img src="img/logo.svg" class=" pe-4 " alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +48,11 @@
       </nav>
 
 
-  <main class="d-flex">
+  <main class="d-flex pt-5">
+
+    <!-- Inizio sidebar -->
 
       <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark justify-content-between my-sidebar">
-
-        
         <ul class="nav nav-pills flex-column mb-auto">
           <li>
             <a href="#" class="nav-link text-white">
@@ -84,14 +84,21 @@
                   </a>
             </li>
         </ul>
-        
       </div>
 
 
 
-      <div class="container-fluid flex-wrap my-navbar bg-primary">
+
+      <!-- Navbar blu -->
+
+
+
+      <div class="container-fluid flex-wrap my-navbar bg-primary my-margin-navbar">
         <div class="container">
             <div class="row my-navbar text-white pt-3">
+
+
+              <!-- Colonna1 -->
               <div class="col-6 ">
                 <h2 class="d-inline-block">Boolean</h2>
                 <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size" href=""> Piano blaze</a></small><br>
@@ -101,6 +108,9 @@
                 <small><a class="text-white text-decoration-none p-1 rounded-pill  bg-info my-size" href="">Boolean blog app</a></small>
                 
 
+
+
+              <!-- Colonna 2 -->
               </div>
               <div class="col-3 ">
                 Studenti online negli ultimi 30 minuti <br> <h3>125</h3>
@@ -114,9 +124,7 @@
 
 
 
-
-
-
+              <!-- Colonnaa 3  Button con FORM -->
 
 
               <div class="col-3 text-center">
@@ -125,7 +133,7 @@
                 
                     <a class="nav-link fa-solid fa-square-plus fa-bell " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     </a>
-                      <ul class="dropdown-menu my-form">
+                      <ul class="dropdown-menu my-form w-50">
                         <form class="needs-validation">
                             <div class="form-row d-flex flex-wrap">
 
@@ -140,10 +148,6 @@
                                 <label for="">Cognome</label>
                                 <input type="text" class="form-control" id="" value="" required>
                               </div>
-
-
-
-
 
                               <div class="col-md-5 mb-3 me-4 ms-4">
                                 <label for="">Email</label>
@@ -161,43 +165,34 @@
                                 <input type="text" class="form-control" id="" required>
                               </div>
 
-
-
-
-
-
-
-                              <div class="col-md-10 mb-3 ms-4">
+                              <div class="col-md-10 mb-2 ms-4 my-width ">
                                 <label for="">Indirizzo</label>
                                 <input type="text" class="form-control" id=""  required>
                               </div>
 
-
-
-
-
-                              <div class="col-md-5 mb-3 me-2 ms-4">
+                              <div class="col-md-5 mb-4 me-3 ms-4">
                                 <label for="">Città</label>
                                 <input type="text" class="form-control" id=""  required>
                               </div>
 
-
-                              <!-- Da Modificare -->
-                              <div class="col-md-3 mb-3 me-2">
-                                <label for="validationCustom04">Stato</label>
-                                <input type="text" class="form-control" id=""  required>
-                               
+                              <div class="col-md-3 me-2">
+                                <label for="inputState">Stato</label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>Scegli...</option>
+                                  <option>Italia</option>
+                                  <option>Germania</option>
+                                  <option>Francia</option>
+                                </select>
                               </div>
-
-
+                            
                               <div class="col-md-2 mb-3">
                                 <label for="">CAP</label>
                                 <input type="text" class="form-control" id=""  required>
                               </div>
-
-
-
-
+                              <div class="mb-3 col-md-10 ms-4 my-width">
+                                <label for="formFile" class="form-label">Default file input example</label>
+                                <input class="form-control" type="file" id="formFile">
+                              </div>
                               <div class="d-flex flex-column ms-4">
                               <div class="form-group mb-2">
                                 <div class="form-check">
@@ -210,37 +205,212 @@
                               <button class="btn btn-primary" type="submit">Salva</button>
                             </div>
                             </form>
-                            </div>
-
-
-
-                           
-    
-                      </ul>
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                          </div>
+                          </ul>
               </div>
             </div>
       </div>
-     
 
 
 
+
+
+      <!-- Fine navbar blu -->
+
+
+
+     <!-- Container con card -->
+
+      <div class="container my-container">
+        <div class="row">
+
+         <!-- Inizio colonna 1 -->
+          <div class="col-8">
+
+            <!-- Card "prossime classi" -->
+            <div class="card w-100 mt-3">
+
+              <div class="card-header">
+                <h3>Prossime classi</h3>
+              </div>
+            <div class="row">
+              <div class="col-5 pe-0">
+                <ul class="list-group list-group-flush ">
+                  <li class="list-group-item ">Nome</li>
+                  <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 75</small></li>
+                  <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 76</small></li></li>
+                  <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 77</small></li></li>
+                  <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 78</small></li></li>
+                  <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 79</small></li></li>
+                  <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 80</small></li></li>
+                  <li class="list-group-item"><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 81</small></li></li>
+                  <li class="list-group-item "><img src="img/class-avatar.jpg" class="my-height-img" alt="">  <small>Classe 82</small></li></li>
+                </ul>
+              </div>
+              <div class="col-2 list-group list-group-flush p-0 text-center">
+                <li class="list-group-item "><small>Data inizio</small></li>
+                <li class="list-group-item "><small>15 feb 2021</small></li>
+                <li class="list-group-item "><small>16 feb 2021</small></li>
+                <li class="list-group-item "><small>17 feb 2021</small></li>
+                <li class="list-group-item "><small>18 feb 2021</small></li>
+                <li class="list-group-item "><small>19 feb 2021</small></li>
+                <li class="list-group-item "><small>20 feb 2021</small></li>
+                <li class="list-group-item "><small>21 feb 2021</small></li>
+                <li class="list-group-item "><small>22 feb 2021</small></li>
+              </div>
+              <div class="col-1 list-group list-group-flush p-0 text-center">
+                <li class="list-group-item "><small>ROI</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+                <li class="list-group-item "><small>20%</small></li>
+              </div>
+              <div class="col-2 list-group list-group-flush p-0 text-center">
+                <li class="list-group-item "><small>Stato</small></li>
+                <li class="list-group-item "><small>Done</small></li>
+                <li class="list-group-item "><small>Done</small></li>
+                <li class="list-group-item "><small>procs</small></li>
+                <li class="list-group-item "><small>Done</small></li>
+                <li class="list-group-item "><small>failed</small></li>
+                <li class="list-group-item "><small>Done</small></li>
+                <li class="list-group-item "><small>failed</small></li>
+                <li class="list-group-item "><small>Done</small></li>
+              </div>
+              <div class="col-2 list-group list-group-flush ps-0 text-center">
+                <li class="list-group-item  "><small>Azioni</small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+                <li class="list-group-item "><small><i class="fa-solid fa-pen fa-2xs my-button-azioni"></i></small><small><i class="fa-solid fa-trash fa-2xs my-button-azioni ms-2"></i></small></li>
+              </div>
+            </div>
+            </div>
+            
+
+
+           <!-- Card "FAQ" -->
+            <div class="card  mt-3">
+              <div class="card-header">
+                <h3>F.A.Q</h3>
+              </div>
+              <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item list-group list-group-flush">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Come aggiungere un nuovo studente?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Clicca sul + in alto nella sezione blu.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Come posso accedere alle informazioni del mio account?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Clicca sull'icona della campanella.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Posso usare questa dashboard da mobile?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+ 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+         <!-- Inizio colonna 2 -->
+          <div class="col-4">
+
+            <!-- Card "Todo" -->
+            <div class="card w-100 mt-3">
+              <div class="card-header">
+                <h3>Todo</h3>
+              </div>
+              <div class="card ms-3 me-3 mt-3 mb-3">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Kickoff nuove classi
+                    </label>
+                  </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Lezione su Bootstrap 5 in class #75
+                      </label>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Controllare username github studenti
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+
+          <!-- Card "Stats con foto" -->
+          <div class="card w-100 mt-3">
+            <div class="card ms-3 me-3 mt-3 mb-3 ">
+              <img src="img/stats.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Utenti attivi</h5>
+                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Gennaio: 1200</li>
+                <li class="list-group-item">Febbraio: 800</li>
+                <li class="list-group-item">Marzo: 1500</li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">Visualliza report approfondito</a>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
     </main> 
 
 
@@ -248,3 +418,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+

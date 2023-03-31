@@ -4,30 +4,51 @@
     padding: 0;
 }
 
-
-
-
 .my-sidebar{
     width: 145px;
     height: calc(100vh - 54px);
     background-image: url(../img/sidebar-bg.png);
+    position: fixed;
 }
-
-
-
 
 .my-navbar{
     height: 100px;
+    position: fixed;
+    width: calc(100% - 145px);
+}
+
+.my-margin-navbar{
+    margin-left: 145px;
 }
 
 .my-size{
     font-size: smaller;
 }
 
-
-
 .my-form{
     position: absolute;
     inset: 0px auto auto 50%;
     margin: 0px;
+}
+
+.my-width{
+    width: 88%;
+}
+
+.my-container{
+    height: 80vh;
+    margin-top: 100px;
+    overflow: scroll;
+}
+
+.my-height-img{
+    height: 20px;
+}
+
+.my-button-azioni{
+    width: 20px;
+    border: 1px solid;
+    height: 20px;
+    padding-top: 8px;
+    border-radius: 2px;
 }
